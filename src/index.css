@@ -1,4 +1,30 @@
 @tailwind base;
+
 @tailwind components;
 @tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@layer components {
+	.nav-middle {
+		@apply block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0;
+	}
+	.nav-middle-ul {
+		@apply flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0;
+	}
+	.sidebar-social-icon {
+		@apply font-normal text-3xl;
+	}
+	.sidebar-hashtags {
+		@apply px-3 mr-3.5 my-[0.4rem] shadow-md hover:shadow-lg border transform transition duration-300 hover:scale-110 cursor-pointer;
+	}
+}
+
+.author-name {
+	font-family: "Josefin Sans", sans-serif;
+}
 
