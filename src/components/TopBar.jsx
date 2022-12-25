@@ -37,12 +37,12 @@ const TopBar = () => {
 						</li>
 						<li>
 							<a href="#" className="nav-middle">
-								Contact
+								Write
 							</a>
 						</li>
 						<li>
 							<a href="#" className="nav-middle">
-								Write
+								Logout
 							</a>
 						</li>
 					</ul>
