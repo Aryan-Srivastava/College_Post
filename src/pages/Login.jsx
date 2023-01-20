@@ -1,9 +1,10 @@
 import { useFormik } from 'formik'
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import * as Yup from 'yup'
+import '../index.css';
 
-const LoginPage = () => {
+const Login = () => {
     const formik = useFormik({
         initialValues: {
             email: "",
@@ -20,9 +21,9 @@ const LoginPage = () => {
         },
     })
     return (
-        <div className="flex flex-col justify-center items-center h-screen bg-gray-700 ">
-            <div className="flex flex-col w-full max-w-md px-4 py-8 bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
-                <div className="self-center mb-6 text-xl font-light text-gray-600 sm:text-2xl dark:text-white">
+        <div className="flex flex-col justify-center items-center h-screen ">
+            <div className="flex flex-col w-full max-w-md px-4 py-8 bg-gray-50 rounded-lg shadow sm:px-6 md:px-8 lg:px-10">
+                <div className="login-register-heading">
                     Login To Your Account
                 </div>
                 <div className="flex gap-4 item-center">
@@ -44,6 +45,11 @@ const LoginPage = () => {
                 <div className="mt-8">
                     <form action="#" autoComplete="off">
                         <div className="flex flex-col mb-2">
+                            {formik.touched.email && formik.errors.email ? (
+                                <div className="text-red-500 text-xs italic mt-1">
+                                    {formik.errors.email}
+                                </div>
+                            ) : null}
                             <div className="flex relative ">
                                 <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
                                     <svg width="15" height="15" fill="currentColor" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
@@ -55,18 +61,18 @@ const LoginPage = () => {
                                     type="email"
                                     id="email"
                                     name="email"
-                                    className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                    className=" inputField-login-register"
                                     placeholder="Your email"
                                     {...formik.getFieldProps("email")}
                                 />
                             </div>
-                            {formik.touched.email && formik.errors.email ? (
-                                <div className="text-red-500 text-xs italic mt-1">
-                                    {formik.errors.email}
-                                </div>
-                            ) : null}
                         </div>
                         <div className="flex flex-col mb-6">
+                            {formik.touched.password && formik.errors.password ? (
+                                <div className="text-red-500 text-xs italic mt-1">
+                                    {formik.errors.password}
+                                </div>
+                            ) : null}
                             <div className="flex relative ">
                                 <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
                                     <svg width="15" height="15" fill="currentColor" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
@@ -78,22 +84,17 @@ const LoginPage = () => {
                                     type="password"
                                     id="password"
                                     name="password"
-                                    className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                    className=" inputField-login-register"
                                     placeholder="Your password"
                                     {...formik.getFieldProps("password")}
                                 />
                             </div>
-                            {formik.touched.password && formik.errors.password ? (
-                                <div className="text-red-500 text-xs italic mt-1">
-                                    {formik.errors.password}
-                                </div>
-                            ) : null}
                         </div>
                         <div className="flex items-center mb-6 -mt-4">
                             <div className="flex ml-auto">
                                 <Link
                                     to="/forgot-password"
-                                    className="inline-flex text-xs font-thin text-gray-500 sm:text-sm dark:text-gray-100 hover:text-gray-700 dark:hover:text-white"
+                                    className="tagline-login-register"
                                 >
                                     Forgot Your Password?
                                 </Link>
@@ -102,7 +103,7 @@ const LoginPage = () => {
                         <div className="flex w-full">
                             <button
                                 type="submit"
-                                className="py-2 px-4  bg-purple-600 hover:bg-purple-700 focus:ring-purple-500 focus:ring-offset-purple-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                                className="login-submit-btn"
                             >
                                 Login
                             </button>
@@ -111,7 +112,7 @@ const LoginPage = () => {
                 </div>
                 <div className="flex items-center justify-center mt-6">
                     <Link
-                        className="inline-flex items-center text-sm font-thin text-center text-gray-500 hover:text-gray-700 dark:text-gray-100 dark:hover:text-white"
+                        className="tagline-login-register"
                         to="/register"
                     >
                         Don&#x27;t have an account ? Register
@@ -122,4 +123,4 @@ const LoginPage = () => {
     )
 }
 
-export default LoginPage
+export default Login

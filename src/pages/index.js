@@ -1,13 +1,9 @@
-import LoginPage from './LoginPage';
-import RegisterPage from './RegisterPage';
-import ForgotPasswordPage from './ForgotPasswordPage';
-import ProfilePage from './ProfilePage';
-import Home from './Home';
+import Home from "./Home";
+import Login from "./Login";
+import Register from "./Register";
+import Single from "./Single";
+import Write from "./Write";
+import Settings from "./Settings";
+import ForgotPassword from "./ForgotPassword";
 
-export {
-    LoginPage,
-    RegisterPage,
-    ForgotPasswordPage,
-    ProfilePage,
-    Home
-};
+export { Home, Login, Register, Single, Write, Settings, ForgotPassword };
