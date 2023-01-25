@@ -1,8 +1,7 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
+// import React, { useState, useEffect } from "react";
 import { HashTags } from "./index";
 import "../index.css";
-import { useEffect } from "react";
+import { Link } from "react-router-dom";
 // import axios from "axios";
 // import { Link } from "react-router-dom";
 
@@ -40,24 +39,24 @@ const SideBar = () => {
         </div>
         <ul className="flex justify-evenly overflow-hidden">
           <li>
-            <a href="#" className="sidebar-social-icon">
+            <Link className="sidebar-social-icon">
               <i className="fa-brands fa-instagram px-5 text-[#f009a5] duration-200 hover:scale-125"></i>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="sidebar-social-icon">
+            <Link className="sidebar-social-icon">
               <i className="fa-brands fa-facebook-f px-5 text-[#175beb] duration-200 hover:scale-125"></i>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="sidebar-social-icon">
+            <Link className="sidebar-social-icon">
               <i className="fa-brands fa-twitter px-5 text-[#1da1f2] duration-200 hover:scale-125"></i>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="sidebar-social-icon">
+            <Link className="sidebar-social-icon">
               <i className="fa-solid fa-envelope px-5 text-[#ff6f6f] duration-200 hover:scale-125"></i>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -10,7 +9,7 @@ const Error = () => {
                 Page Not Found
             </div>
             <button className="mt-5">
-                <a
+                <Link
                     className="relative inline-block text-sm font-medium text-[#FF6A3D] group active:text-orange-500 focus:outline-none focus:ring"
                 >
                     <span
@@ -22,7 +21,7 @@ const Error = () => {
                             Go Home
                         </Link>
                     </span>
-                </a>
+                </Link>
             </button>
         </main>
     )

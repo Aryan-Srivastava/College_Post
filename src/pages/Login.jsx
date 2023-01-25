@@ -1,5 +1,4 @@
 import { useFormik } from 'formik'
-import React from 'react'
 import { Link } from 'react-router-dom'
 import * as Yup from 'yup'
 import '../index.css';
@@ -22,7 +21,7 @@ const Login = () => {
     })
     return (
         <div className="flex flex-col justify-center items-center h-screen ">
-            <div className="flex flex-col w-full max-w-md px-4 py-8 bg-gray-50 rounded-lg shadow sm:px-6 md:px-8 lg:px-10">
+            <div className="login-register-wrapper">
                 <div className="login-register-heading">
                     Login To Your Account
                 </div>
@@ -61,7 +60,7 @@ const Login = () => {
                                     type="email"
                                     id="email"
                                     name="email"
-                                    className=" inputField-login-register"
+                                    className=" rounded-l-none inputField-login-register"
                                     placeholder="Your email"
                                     {...formik.getFieldProps("email")}
                                 />
@@ -84,7 +83,7 @@ const Login = () => {
                                     type="password"
                                     id="password"
                                     name="password"
-                                    className=" inputField-login-register"
+                                    className=" rounded-l-none inputField-login-register"
                                     placeholder="Your password"
                                     {...formik.getFieldProps("password")}
                                 />

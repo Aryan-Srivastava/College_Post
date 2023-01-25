@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useLocation, Link } from "react-router-dom";
+// import React, { useState, useEffect } from "react";
+// import { useLocation, Link } from "react-router-dom";
 // import axios from "axios";
 
 const SingleBlog = () => {
@@ -26,7 +26,7 @@ const SingleBlog = () => {
                         className="w-full h-[300px] rounded-md object-cover"
                     />
                 )} */}
-				<img src="https://github.com/Aryan-Srivastava.png" alt="" />
+				<img src="https://github.com/Aryan-Srivastava.png" alt="pfp" />
 				<div className="SinglePostTitle text-3xl text-center my-10">
 					{/* {post.title} */} Title
 					<div className="float-right text-[18px] cursor-pointer">

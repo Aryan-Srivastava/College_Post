@@ -1,17 +1,9 @@
 {
-  "name": "college_post",
+  "name": "college-post-client",
   "description": "college post, a blogging website for collge",
+  "author": "Aryan Srivastava",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.1",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts preview"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Aryan-Srivastava/College_Post.git"
-  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -25,6 +17,12 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

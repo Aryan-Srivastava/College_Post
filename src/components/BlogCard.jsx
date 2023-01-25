@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import { Link } from "react-router-dom";
 import { HashTags } from "./HashTags";
 
 const BlogCard = () => {
@@ -7,15 +6,15 @@ const BlogCard = () => {
         <div className="flex w-[700px] mb-10 ml-16 p-[40px] border border-gray-200 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-md bg-white ">
             <div>
                 <div className="flex ">
-                    <a href="">
+                    <Link to="">
                         <img
                             src="https://github.com/Aryan-Srivastava.png"
                             alt=""
                             className="h-32 w-32 mr-10 cursor-pointer shadow-md transform duration-300 hover:scale-105"
                         />
-                    </a>
+                    </Link>
                     <div className="flex flex-col">
-                        <a href="#" className="text-3xl font-bold leading-10 cursor-pointer text-[#39376b] hover:text-cyan-800">Far far away, behind the mountains</a>
+                        <Link to="" className="text-3xl font-bold leading-10 cursor-pointer text-[#39376b] hover:text-cyan-800">Far far away, behind the mountains</Link>
                         <div className="mt-2 inline-flex justify-start align-middle text-xs font-mono opacity-75">
                             <span className="mr-3">1 hour ago</span>
                             <hr className="mt-2 border-orange-600 bg-orange-600 border w-4 " />
@@ -32,15 +31,15 @@ const BlogCard = () => {
                     </p>
                     <div className="flex justify-between align-center">
                         <div className="text-sm">
-                            <a href="">
+                            <Link to="">
                                 <HashTags name="Tech" color="text-pink-400" />
-                            </a>
-                            <a href="">
+                            </Link>
+                            <Link to="">
                                 <HashTags name="Get Started" color="text-purple-400" />
-                            </a>
-                            <a href="">
+                            </Link>
+                            <Link to="">
                                 <HashTags name="Travel" color="text-red-300" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="flex cursor-pointer">
                             <img src="https://github.com/Aryan-Srivastava.png" alt="" className="h-8 mr-3 rounded-full hover:text-red-500" />

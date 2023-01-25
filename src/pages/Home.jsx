@@ -1,4 +1,3 @@
-import React from 'react'
 import { SideBar, BlogCards } from '../components'
 
 const Home = () => {
