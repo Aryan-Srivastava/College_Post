@@ -1,6 +1,8 @@
-﻿# Colloge_Post
- 
- ## Home Page
+# College_Post
+
+College Post Backend - [Backend](https://github.com/Aryan-Srivastava/College_Post_Backend)
+
+## Home Page
 
 ![college post home page](https://user-images.githubusercontent.com/68139593/213793864-e84033b9-5d33-413a-a71c-325350ec7f0a.jpg)
 
