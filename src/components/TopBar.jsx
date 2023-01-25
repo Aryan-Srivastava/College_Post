@@ -50,8 +50,8 @@ const TopBar = () => {
 				<div className="flex justify-center cursor-pointer">
 					<Link>
 						<img
-							className="rounded-full h-10"
-							src="https://github.com/Aryan-Srivastava.png"
+							className="rounded-full h-10 w-10 object-cover"
+							src="https://source.unsplash.com/random"
 							alt="profile_image"
 						/>
 					</Link>

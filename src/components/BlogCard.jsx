@@ -8,7 +8,7 @@ const BlogCard = () => {
                 <div className="flex ">
                     <Link to="">
                         <img
-                            src="https://github.com/Aryan-Srivastava.png"
+                            src="https://source.unsplash.com/random"
                             alt=""
                             className="h-32 w-32 mr-10 cursor-pointer shadow-md"
                         />
@@ -42,7 +42,7 @@ const BlogCard = () => {
                             </Link>
                         </div>
                         <div className="flex cursor-pointer">
-                            <img src="https://github.com/Aryan-Srivastava.png" alt="" className="h-8 mr-3 rounded-full hover:text-red-500" />
+                            <img src="https://source.unsplash.com/random" alt="" className="h-8 w-8 mr-3 object-cover rounded-full hover:text-red-500" />
                             <span className="text-xs mt-2 author-name hover:text-orange-600">Aryan Srivastava</span>
                             {/* <i className="fa-solid fa-share-nodes mt-2 ml-5 text-blue-800 share"><span className="share-tooltip">hello</span></i> */}
                         </div>
