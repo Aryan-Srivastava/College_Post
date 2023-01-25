@@ -3,14 +3,14 @@ import { HashTags } from "./HashTags";
 
 const BlogCard = () => {
     return (
-        <div className="flex w-[700px] mb-10 ml-16 p-[40px] border border-gray-200 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-md bg-white ">
+        <div className="flex w-[700px] mb-10 ml-16 p-[40px] border border-gray-200 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded bg-white ">
             <div>
                 <div className="flex ">
                     <Link to="">
                         <img
                             src="https://github.com/Aryan-Srivastava.png"
                             alt=""
-                            className="h-32 w-32 mr-10 cursor-pointer shadow-md transform duration-300 hover:scale-105"
+                            className="h-32 w-32 mr-10 cursor-pointer shadow-md"
                         />
                     </Link>
                     <div className="flex flex-col">

@@ -3,7 +3,7 @@ import { BlogCard } from './index'
 
 const BlogCards = () => {
   return (
-    <div className='flex-[9_9_2%] mr-3 mt-5'>
+    <div className='flex-[9_9_2%] mr-3 mt-28'>
       <BlogCard />
       <BlogCard />
       <BlogCard />

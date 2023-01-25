@@ -19,7 +19,7 @@
 		@apply font-normal text-3xl;
 	}
 	.sidebar-hashtags {
-		@apply px-3 mr-3.5 my-[0.4rem] shadow-md hover:shadow-lg border transform transition duration-300 hover:scale-110 cursor-pointer;
+		@apply px-3 mr-3.5 my-[0.4rem] shadow-md hover:shadow-lg border transform transition duration-300 hover:scale-105 cursor-pointer;
 	}
 	/* login - register - forgotpassword pages*/
 	.tagline-login-register {

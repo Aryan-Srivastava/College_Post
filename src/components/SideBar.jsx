@@ -17,7 +17,7 @@ const SideBar = () => {
   // })
 
   return (
-    <aside className=" flex-[3_3_0] w-54 ml-8 " aria-label="Sidebar">
+    <aside className=" flex-[3_3_0] w-54 ml-8 mt-24 " aria-label="Sidebar">
       <div className="overflow-y-auto">
         <div>
           <div className="flex mt-5 mb-5">
@@ -30,7 +30,14 @@ const SideBar = () => {
                 <HashTags key={c._id} name={c.name} />
               </Link>
             ))} */}
-            <HashTags name="hello"/>
+            <HashTags color="text-purple-400" name="Get Started"/>
+            <HashTags color="text-teal-400" name="Tech"/>
+            <HashTags color="text-lime-400" name="Music"/>
+            <HashTags color="text-green-400" name="Life"/>
+            <HashTags color="text-yellow-400" name="Notice"/>
+            <HashTags color="text-blue-400" name="Health"/>
+            <HashTags color="text-cyan-400" name="Travel"/>
+            <HashTags color="text-red-300" name="Important" />
           </ul>
         </div>
         <div className="flex mt-5 mb-5">
