@@ -1,6 +1,19 @@
 import '../index.css';
+import { useState } from 'react';
 
 const Settings = () => {
+    const [isHover, setIsHover] = useState(false);
+
+    const handleMouseEnter = () => {
+      setIsHover(true);
+    };
+    const handleMouseLeave = () => {
+      setIsHover(false);
+    };
+    const borderStyle ={
+        borderBottom: isHover ? "2px solid gray" : "1.5px solid gray",
+        border:"none"
+    }
     return (
         <>
             <div className="mt-20 settings mr-5">
@@ -22,24 +35,28 @@ const Settings = () => {
                             <div className='flex-[50%]'>
                                 <label htmlFor="" className='text-[20px] mt-5 mr-2'>First name</label>
                                 <br/>
-                                <input type="text" placeholder="firstname" className='profileInput hover:border-gray' />
+                                <input type="text" placeholder="First name" className='profileInput hover:border-gray' 
+                                style={borderStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
                             </div>
                             <div className='flex-[50%]'>
                                 <label htmlFor="" className='text-[20px] mt-5 mr-2'>Last name</label>
                                 <br/>
-                                <input type="text" placeholder="Lastname" className='profileInput' />
+                                <input type="text" placeholder="Last name" className='profileInput'
+                                style={borderStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
                             </div>
                         </div>
                         <div className='flex'>
                             <div className='flex-[50%]'>
                                 <label htmlFor="" className='text-[20px] mt-5'>Username</label>
                                 <br/>
-                                <input type="text" placeholder="username" className='profileInput' />
+                                <input type="text" placeholder="Username" className='profileInput'
+                                style={borderStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} />
                             </div>
                             <div className='flex-[50%]'>
                                 <label htmlFor="" className='text-[20px] mt-5'>Email</label>
                                 <br/>
-                                <input type="email" placeholder="example@gmail.com" className='profileInput' />
+                                <input type="email" placeholder="example@gmail.com" className='profileInput'
+                                style={borderStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
                             </div>
                         </div>
                         
@@ -47,12 +64,14 @@ const Settings = () => {
                             <div className='flex-[50%]'>
                                 <label htmlFor="" className='text-[20px] mt-5'>Password</label>
                                 <br/>
-                                <input type="password" placeholder='password' className='profileInput' />
+                                <input type="password" placeholder='password' className='profileInput'
+                                style={borderStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
                             </div>
                             <div className='flex-[50%]'>
                                 <label htmlFor="" className='text-[20px] mt-5'>Education</label>
                                 <br/>
-                                <input type="email" placeholder="Punjab Engineering College" className='profileInput' />
+                                <input type="email" placeholder="Punjab Engineering College" className='profileInput'
+                                style={borderStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
                             </div>
                         </div>
                         
