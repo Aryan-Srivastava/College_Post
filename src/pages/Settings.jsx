@@ -1,6 +1,19 @@
 import '../index.css';
+import { useState } from 'react';
 
 const Settings = () => {
+    const [isHover, setIsHover] = useState(false);
+
+    const handleMouseEnter = () => {
+      setIsHover(true);
+    };
+    const handleMouseLeave = () => {
+      setIsHover(false);
+    };
+    const borderStyle ={
+        borderBottom: isHover ? "2px solid gray" : "1.5px solid gray",
+        border:"none"
+    }
     return (
         <>
             <div className="mt-20 settings mr-5">
@@ -21,20 +34,52 @@ const Settings = () => {
                         <div className='flex'>
                             <div className='flex-[50%]'>
                                 <label htmlFor="" className='text-[20px] mt-5 mr-2'>First name</label>
-                                <input type="text" placeholder="firstname" className='profileInput' />
+                                <br/>
+                                <input type="text" placeholder="First name" className='profileInput hover:border-gray' 
+                                style={borderStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
                             </div>
                             <div className='flex-[50%]'>
                                 <label htmlFor="" className='text-[20px] mt-5 mr-2'>Last name</label>
-                                <input type="text" placeholder="Lastname" className='profileInput' />
+                                <br/>
+                                <input type="text" placeholder="Last name" className='profileInput'
+                                style={borderStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
                             </div>
                         </div>
-                        <label htmlFor="" className='text-[20px] mt-5'>Username</label>
-                        <input type="text" placeholder="username" className='profileInput' />
-                        <label htmlFor="" className='text-[20px] mt-5'>Email</label>
-                        <input type="email" placeholder="example@gmail.com" className='profileInput' />
-                        <label htmlFor="" className='text-[20px] mt-5'>Password</label>
-                        <input type="password" placeholder='password' className='profileInput' />
-                        <button className="settingsSubmit">Submit</button>
+                        <div className='flex'>
+                            <div className='flex-[50%]'>
+                                <label htmlFor="" className='text-[20px] mt-5'>Username</label>
+                                <br/>
+                                <input type="text" placeholder="Username" className='profileInput'
+                                style={borderStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} />
+                            </div>
+                            <div className='flex-[50%]'>
+                                <label htmlFor="" className='text-[20px] mt-5'>Email</label>
+                                <br/>
+                                <input type="email" placeholder="example@gmail.com" className='profileInput'
+                                style={borderStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
+                            </div>
+                        </div>
+                        
+                        <div className='flex'>
+                            <div className='flex-[50%]'>
+                                <label htmlFor="" className='text-[20px] mt-5'>Password</label>
+                                <br/>
+                                <input type="password" placeholder='password' className='profileInput'
+                                style={borderStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
+                            </div>
+                            <div className='flex-[50%]'>
+                                <label htmlFor="" className='text-[20px] mt-5'>Education</label>
+                                <br/>
+                                <input type="email" placeholder="Punjab Engineering College" className='profileInput'
+                                style={borderStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
+                            </div>
+                        </div>
+                        
+                        <button className="bg-yellow-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded settingsSubmit" style={{
+                            marginTop: "50px",
+                            width: "100px",
+                        }}>
+                            Submit</button>
                     </form>
                 </div>
             </div>
