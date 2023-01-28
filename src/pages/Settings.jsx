@@ -21,20 +21,46 @@ const Settings = () => {
                         <div className='flex'>
                             <div className='flex-[50%]'>
                                 <label htmlFor="" className='text-[20px] mt-5 mr-2'>First name</label>
-                                <input type="text" placeholder="firstname" className='profileInput' />
+                                <br/>
+                                <input type="text" placeholder="firstname" className='profileInput hover:border-gray' />
                             </div>
                             <div className='flex-[50%]'>
                                 <label htmlFor="" className='text-[20px] mt-5 mr-2'>Last name</label>
+                                <br/>
                                 <input type="text" placeholder="Lastname" className='profileInput' />
                             </div>
                         </div>
-                        <label htmlFor="" className='text-[20px] mt-5'>Username</label>
-                        <input type="text" placeholder="username" className='profileInput' />
-                        <label htmlFor="" className='text-[20px] mt-5'>Email</label>
-                        <input type="email" placeholder="example@gmail.com" className='profileInput' />
-                        <label htmlFor="" className='text-[20px] mt-5'>Password</label>
-                        <input type="password" placeholder='password' className='profileInput' />
-                        <button className="settingsSubmit">Submit</button>
+                        <div className='flex'>
+                            <div className='flex-[50%]'>
+                                <label htmlFor="" className='text-[20px] mt-5'>Username</label>
+                                <br/>
+                                <input type="text" placeholder="username" className='profileInput' />
+                            </div>
+                            <div className='flex-[50%]'>
+                                <label htmlFor="" className='text-[20px] mt-5'>Email</label>
+                                <br/>
+                                <input type="email" placeholder="example@gmail.com" className='profileInput' />
+                            </div>
+                        </div>
+                        
+                        <div className='flex'>
+                            <div className='flex-[50%]'>
+                                <label htmlFor="" className='text-[20px] mt-5'>Password</label>
+                                <br/>
+                                <input type="password" placeholder='password' className='profileInput' />
+                            </div>
+                            <div className='flex-[50%]'>
+                                <label htmlFor="" className='text-[20px] mt-5'>Education</label>
+                                <br/>
+                                <input type="email" placeholder="Punjab Engineering College" className='profileInput' />
+                            </div>
+                        </div>
+                        
+                        <button className="bg-yellow-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded settingsSubmit" style={{
+                            marginTop: "50px",
+                            width: "100px",
+                        }}>
+                            Submit</button>
                     </form>
                 </div>
             </div>
