@@ -13,3 +13,7 @@ College Post Backend - [Backend](https://github.com/Aryan-Srivastava/College_Pos
 ## Write Page
 
 ![college post write page](https://user-images.githubusercontent.com/68139593/213794057-b9f46293-04bf-4a10-ac78-8f54327d2036.jpg)
+
+## About Page
+
+![AboutPage-min](https://user-images.githubusercontent.com/66886860/216991434-2b68952c-d9e6-47bc-978a-dc1ff02dd474.gif)
