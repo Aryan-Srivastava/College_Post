@@ -16,4 +16,4 @@ College Post Backend - [Backend](https://github.com/Aryan-Srivastava/College_Pos
 
 ## About Page
 
-https://www.figma.com/file/A6oZa4xXlxb2zDUTd7kWDT/About-Us-(College-Post)?node-id=0%3A1&t=jk499ISdUx0wSPMK-1
+![AboutPage-min](https://user-images.githubusercontent.com/66886860/216991434-2b68952c-d9e6-47bc-978a-dc1ff02dd474.gif)
