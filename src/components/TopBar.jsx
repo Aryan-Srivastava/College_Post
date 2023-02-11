@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 const TopBar = () => {
   return (
+    <>
     <nav className="fixed w-[100%] z-50 border-b backdrop-filter backdrop-blur-lg bg-opacity-30 bg-white  px-2 sm:px-4 py-2.5 ">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <Link className="flex items-center">
@@ -50,6 +51,31 @@ const TopBar = () => {
         </div>
       </div>
     </nav>
+    <ul
+    className="bottom-0 bg-[#faddc7] flex flex-row h-[50px] fixed z-10 w-[-webkit-fill-available] space-x-10 justify-center md:hidden"
+  >
+    <li className="flex text-center">
+      <Link
+        className="py-2 pl-3 pr-4 text-orange-700 rounded md:bg-transparent md:text-orange-600 md:p-0"
+        aria-current="page"
+      >
+        Home
+      </Link>
+    </li>
+    <li className="flex text-center">
+      <Link className="nav-middle">About</Link>
+    </li>
+    <li className="flex text-center">
+      <Link className="nav-middle">Contact</Link>
+    </li>
+    <li className="flex text-center">
+      <Link className="nav-middle">Write</Link>
+    </li>
+    <li className="flex text-center">
+      <Link className="nav-middle">Logout</Link>
+    </li>
+  </ul>
+  </>
   );
 };
 
