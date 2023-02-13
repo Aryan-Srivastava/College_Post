@@ -9,13 +9,13 @@ export default function SplitSection() {
 
   return (
     <div>
-      <div className="max-w-[1000px] mx-auto my-[120px] h-[360] grid grid-cols-3 gap-[100px] border">
+      <div className="cards max-w-[1000px] mx-auto my-[120px] h-[360] grid grid-cols-3 gap-[100px] border">
         <div className=" h-[360] col-span-1 w-[100%] flex flex-col justify-center">
           <img src={img1} alt="profile1" class="rounded-[20px] h-[80%]" />
         </div>
         <div className=" h-[360px] col-span-2 max-w-[645] flex flex-col justify-center">
-          <h1 class="text-black text-[42px] my-2">Who Are We?</h1>
-          <h1 class="text-black text-[30px] my-2">What’s our Story?</h1>
+          <h1 class="cardsText text-black text-[42px] my-2">Who Are We?</h1>
+          <h1 class="cardsText text-black text-[30px] my-2">What’s our Story?</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -26,10 +26,10 @@ export default function SplitSection() {
           </p>
         </div>
       </div>
-      <div className="max-w-[1000px] mx-auto my-[30px] h-[360]   grid grid-cols-3 gap-[100px] border">
-        <div className=" h-[360px] col-span-2 max-w-[645px] flex flex-col justify-center">
-          <h1 class="text-black text-[42px] my-2">We Are Different How?</h1>
-          <h1 class="text-black text-[30px] my-2">What it means?</h1>
+      <div className="cards max-w-[1000px] mx-auto my-[30px] h-[360]   grid grid-cols-3 gap-[100px] border">
+        <div className="h-[360px] col-span-2 max-w-[645px] flex flex-col justify-center">
+          <h1 class="cardsText text-black text-[42px] my-2">We Are Different How?</h1>
+          <h1 class="cardsText text-black text-[30px] my-2">What it means?</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text

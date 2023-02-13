@@ -9,6 +9,9 @@
 }
 
 @layer components {
+	.root{
+		width: max-content;
+	}
 	.nav-middle {
 		@apply block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0;
 	}
@@ -36,6 +39,32 @@
 	}
 	.login-register-wrapper {
 		@apply flex flex-col w-full max-w-md px-4 py-8 bg-gray-50 border rounded-lg shadow sm:px-6 md:px-8 lg:px-10;
+	}
+	#dark {
+        background-color: #07062b;
+    }
+    #dark .TopBar{
+        background-color: #25025a;
+    }
+    #dark .TopBarItemText{
+        color: white;
+    }
+    #dark .TopBarItemText:hover{
+        color: rgb(194, 151, 222);
+    }
+	#dark .SideBar{
+        background-color: #25025a;
+		color: white;
+    }
+	#dark .SideBarItemText{
+        color: antiquewhite;
+    }
+	#dark .cards{
+		background-color: #330352;
+		color: white;
+	}
+	#dark .cardsText{
+		color: antiquewhite;
 	}
 }
 
