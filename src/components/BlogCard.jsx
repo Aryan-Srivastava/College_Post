@@ -3,7 +3,7 @@ import { HashTags } from "./HashTags";
 
 const BlogCard = () => {
     return (
-        <div className="flex w-[700px] mb-10 ml-16 p-[40px] border border-gray-200 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded bg-white ">
+        <div className="cards flex w-[700px] mb-10 ml-16 p-[40px] border border-gray-200 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded bg-white ">
             <div>
                 <div className="flex ">
                     <Link to="">
@@ -14,7 +14,7 @@ const BlogCard = () => {
                         />
                     </Link>
                     <div className="flex flex-col">
-                        <Link to="" className="text-3xl font-bold leading-10 cursor-pointer text-[#39376b] hover:text-cyan-800">Far far away, behind the mountains</Link>
+                        <Link to="" className="cardsText text-3xl font-bold leading-10 cursor-pointer text-[#39376b] hover:text-cyan-800">Far far away, behind the mountains</Link>
                         <div className="mt-2 inline-flex justify-start align-middle text-xs font-mono opacity-75">
                             <span className="mr-3">1 hour ago</span>
                             <hr className="mt-2 border-orange-600 bg-orange-600 border w-4 " />

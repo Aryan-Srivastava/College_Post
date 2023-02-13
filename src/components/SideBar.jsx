@@ -36,8 +36,8 @@ const SideBar = () => {
       <aside
         className={
           enable
-            ? "fixed bg-[#fbe3e3] w-full top-[60px] p-[50px] z-10"
-            : " flex-[3_3_0] w-54 ml-8 mt-24 hidden lg:block"
+            ? "SideBar fixed bg-[#fbe3e3] w-full top-[60px] p-[50px] z-10"
+            : "SideBar flex-[3_3_0] w-54 ml-8 mt-24 hidden lg:block lg:p-[20px] lg:h-fit"
         }
         aria-label="Sidebar"
       >
@@ -47,12 +47,12 @@ const SideBar = () => {
               <h1
                 className={
                   enable
-                    ? "text-2xl  font-bold ml-[20px] w-[20%] text-gray-600"
-                    : "text-2xl w-[40%] font-bold text-gray-600"
+                    ? "SideBarItemText text-2xl  font-bold ml-[20px] w-[20%] text-gray-600"
+                    : "SideBarItemText text-2xl w-[40%] font-bold text-gray-600"
                 }
               >
                 {" "}
-                <span className="text-orange-600 ">T</span>ag Cloud
+                <span className="text-orange-600">T</span>ag Cloud
               </h1>
               <div
                 onClick={() => setEnable(!enable)}
@@ -124,8 +124,8 @@ const SideBar = () => {
             <h1
               className={
                 enable
-                  ? "text-2xl ml-[20px] w-[20%] tag-cloud font-bold text-gray-600"
-                  : "text-2xl w-[30%] tag-cloud font-bold text-gray-600 "
+                  ? "SideBarItemText text-2xl ml-[20px] w-[20%] tag-cloud font-bold text-gray-600"
+                  : "SideBarItemText text-2xl w-[30%] tag-cloud font-bold text-gray-600 "
               }
             >
               <span className="text-orange-600">F</span>ollow !
@@ -166,8 +166,8 @@ const SideBar = () => {
             <h1
               className={
                 enable
-                  ? "text-2xl ml-[20px] w-[20%] tag-cloud font-bold text-gray-600"
-                  : "text-2xl w-[40%] tag-cloud font-bold text-gray-600"
+                  ? "SideBarItemText text-2xl ml-[20px] w-[20%] tag-cloud font-bold text-gray-600"
+                  : "SideBarItemText text-2xl w-[40%] tag-cloud font-bold text-gray-600"
               }
             >
               <span className="text-orange-600">A</span>dvertising
