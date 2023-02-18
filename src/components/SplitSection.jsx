@@ -8,12 +8,12 @@ export default function SplitSection() {
     "https://cdn.pixabay.com/photo/2017/01/16/08/27/echo-1983513_1280.png";
 
   return (
-    <div>
-      <div className="cards max-w-[1000px] mx-auto my-[120px] h-[360] grid grid-cols-3 gap-[100px] border">
-        <div className=" h-[360] col-span-1 w-[100%] flex flex-col justify-center">
-          <img src={img1} alt="profile1" class="rounded-[20px] h-[80%]" />
+    <div className="items-center">
+      <div className="cards max-w-[1000px] mx-auto my-[120px] items-center flex flex-col sm:flex-row  sm:space-x-5 border p-[20px] h-fit">
+        <div className="  col-span-1 w-[100%] flex flex-col justify-center items-center sm:items-start">
+          <img src={img1} alt="profile1" class="rounded-[20px] w-[300px] items-center sm:items-start " />
         </div>
-        <div className=" h-[360px] col-span-2 max-w-[645] flex flex-col justify-center">
+        <div className=" h-[360px] col-span-2 max-w-[645] flex flex-col justify-center ">
           <h1 class="cardsText text-black text-[42px] my-2">Who Are We?</h1>
           <h1 class="cardsText text-black text-[30px] my-2">What’s our Story?</h1>
           <p>
@@ -26,7 +26,7 @@ export default function SplitSection() {
           </p>
         </div>
       </div>
-      <div className="cards max-w-[1000px] mx-auto my-[30px] h-[360]   grid grid-cols-3 gap-[100px] border">
+      <div className="cards max-w-[1000px] mx-auto my-[30px] items-center flex flex-col-reverse sm:flex-row  sm:space-x-5 border p-[20px] h-fit">
         <div className="h-[360px] col-span-2 max-w-[645px] flex flex-col justify-center">
           <h1 class="cardsText text-black text-[42px] my-2">We Are Different How?</h1>
           <h1 class="cardsText text-black text-[30px] my-2">What it means?</h1>
@@ -39,7 +39,7 @@ export default function SplitSection() {
             remaining essentially unchanged.
           </p>
         </div>
-        <div className=" h-[360] col-span-1 w-[100%] flex flex-col justify-center">
+        <div className=" h-[360] col-span-1 w-[100%] flex flex-col justify-center items-center sm:items-start">
           <img src={img2} alt="profile2" class="rounded-[20px] w-80" />
         </div>
       </div>

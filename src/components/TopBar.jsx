@@ -58,7 +58,8 @@ const TopBar = (props)=>{
       </div>
     </nav>
     <ul
-    className="TopBar bottom-0 bg-[#faddc7] flex flex-row h-[50px] fixed z-10 w-[-webkit-fill-available] space-x-10 justify-center md:hidden"
+    className="TopBar bottom-0 bg-[#faddc7] flex flex-row h-[50px] fixed z-10 w-[-webkit-fill-available] space-x-3
+    sm:space-x-8 md:space-x-12 justify-center md:hidden"
   >
     <li className="flex text-center">
       <Link

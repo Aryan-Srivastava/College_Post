@@ -9,9 +9,6 @@
 }
 
 @layer components {
-	.root{
-		width: max-content;
-	}
 	.nav-middle {
 		@apply block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0;
 	}
@@ -65,6 +62,10 @@
 	}
 	#dark .cardsText{
 		color: antiquewhite;
+	}
+	#dark .home{
+		width:max-content;
+        background-color: #07062b;
 	}
 }
 
