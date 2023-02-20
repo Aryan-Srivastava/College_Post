@@ -12,7 +12,7 @@ const Write = () => {
                 <div className="writeFormGroup flex flex-col space-y-3">
 
                     <div className="flex flex-row space-x-2">
-                    <label htmlFor="fileInput">
+                    <label htmlFor="fileInput" className="flex items-center">
                         <i className="writeIcon xs:writeIcon2 fas fa-plus"></i>
                     </label>
                     <input

@@ -96,6 +96,12 @@
 		color: aliceblue;
 		border-color: aliceblue;
 	}
+	#dark input{
+		background-color: #332c50;
+	}
+	#dark textarea{
+		background-color: #332c50;
+	}
 }
 
 .author-name {
