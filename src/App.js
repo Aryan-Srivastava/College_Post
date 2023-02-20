@@ -1,5 +1,6 @@
 import React from "react";
 import { TopBar } from "./components";
+import BottomBar from "./components/BottomBar.jsx";
 import {
   Login,
   Register,
@@ -44,6 +45,7 @@ function App() {
           />
           <Route path="/about" element={user ? <About /> : <Login />} />
         </Routes>
+        <BottomBar />
       </div>
       </ThemeContext.Provider>
     </>
