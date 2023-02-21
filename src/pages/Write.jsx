@@ -1,18 +1,28 @@
+import { useEffect, useState } from 'react'
 import '../index.css'
 
 const Write = () => {
+    const[expand,setExpand]=useState("")
+    const[content,setContent]=useState("")
+    useEffect(() => {
+        setExpand("h-auto p-0")
+    console.log("expanded")
+    
+    }, [content])
+    
     return (
-        <div className="write flex flex-col items-center pt-[6rem]  h-[100vh]">
+        <div className="write border-black  pt-[7%] w-[90%] mx-auto h-[100vh] border-4 flex flex-col items-center ">
             <img
                 src="https://source.unsplash.com/random"
                 alt="writeImage"
-                className="writeImage h-[30vh] xs:h-[34vh]  w-[20rem] xs:w-[25rem] ss:w-[35rem] sm:w-[40rem] md:w-[50rem] lg:w-[60rem] "
+                className="writeImage h-[260px] w-full"
             />
-            <div className="writeForm relative flex flex-col flex-wrap justify-between w-[20rem] xs:w-[25rem] ss:w-[30rem] sm:w-[40rem] md:w-[50rem] lg:w-[60rem] mt-[20px] space-y-3 ss:flex-row">
-                <div className="writeFormGroup flex flex-col space-y-3">
+            <div className="writeForm border-red-500  w-full border-4 relative flex flex-col flex-wrap items-center ">
+                <div className="writeFormGroup border-green-500 w-full border-4 flex flex-col">
 
-                    <div className="flex flex-row space-x-2">
-                    <label htmlFor="fileInput" className="flex items-center">
+                    <div className="flex flex-row border-4 items-center  border-blue-400 p-4 text-xl gap-[10px]">
+                        <span className='flex w-full'>
+                        <label htmlFor="fileInput" className="flex items-center">
                         <i className="writeIcon xs:writeIcon2 fas fa-plus"></i>
                     </label>
                     <input
@@ -24,20 +34,25 @@ const Write = () => {
                     <input
                         type="text"
                         placeholder="Title"
-                        className="writeInput p-[10px] text-lg w-[18.1rem] xs:w-[22.8rem] ss:w-[25rem] sm:w-[35rem] md:w-[40rem]"
+                        className="writeInput w-full p-4"
                         autoFocus={true}
                     />
+                        </span>
+                        <div className="writeFormGroup sm:block hidden ">
+                    
+                    <button className="writeSubmit   bg-blue-600 text-white px-5 py-3">Publish</button>
+                </div>
                     </div>
                     <textarea
                         placeholder="Tell your story..."
                         type="text"
-                        className="writeInput writeText p-[20px] h-[20vh] ss:h-[22vh]  ss:w-[25rem] ml-[29px] xs:ml-[37px] sm:w-[35rem] md:w-[40rem]"
+                        onChange={(e)=>setContent(e.target.value)}
+                        className={`writeInput writeText border-4 border-orange-500 overflow-hidden`}
                     ></textarea>
                 </div>
-                <div className="writeFormGroup overflow-hidden sm:ml=[16.5rem]">
+                <div className="writeFormGroup">
                     
-                    <button className="writeSubmit bg-blue-600 text-white mt-[1rem] px-5 py-3 ml-[7.7rem] xs:ml-[10rem] 
-                    ss:ml-[12rem] sm:ml-[16rem] md:ml-0">Publish</button>
+                    <button className="writeSubmit mt-[18%] block sm:hidden bg-blue-600 text-white px-5 py-3">Publish</button>
                 </div>
             </div>
         </div>

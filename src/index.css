@@ -89,18 +89,26 @@
 	}
 
 	#dark .writeIcon{
-		color: aliceblue;
-		border-color: aliceblue;
+		color: white;
+		border-color: white;
 	}
 	#dark .writeIcon{
-		color: aliceblue;
-		border-color: aliceblue;
+		color: white;
+		border-color: white;
+	}
+	input{
+		/* outline: none; */
+	}
+	textarea{
+		/* outline: none; */
 	}
 	#dark input{
-		background-color: #332c50;
+		background-color: #07062b;
+		color: white;
 	}
 	#dark textarea{
-		background-color: #332c50;
+		background-color: #07062b;
+		color: white;
 	}
 }
 
