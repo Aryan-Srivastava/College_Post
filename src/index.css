@@ -64,9 +64,12 @@
 		color: antiquewhite;
 	}
 	#dark .home{
-		width:max-content;
         background-color: #07062b;
 	}
+	#dark .write{
+        background-color: #07062b;
+		overflow-y: scroll;
+    }
 	.writeImage{
 		border-radius: 7px;
 	}
@@ -74,17 +77,10 @@
 		border-radius: 10px;
 	}
 	.writeIcon{
-		border: 2px solid gray;
-    	border-radius: 50%;
-		color: gray;
-		padding: 2px;
-		font-size: 1rem;
-	}
-	.writeIcon2{
 		border: 3px solid gray;
     	border-radius: 50%;
 		color: gray;
-		padding: 4px;
+		padding: 2px;
 		font-size: 1rem;
 	}
 
@@ -97,10 +93,10 @@
 		border-color: white;
 	}
 	input{
-		/* outline: none; */
+		outline: none;
 	}
 	textarea{
-		/* outline: none; */
+		outline: none;
 	}
 	#dark input{
 		background-color: #07062b;
