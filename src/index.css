@@ -80,17 +80,17 @@
 		border: 3px solid gray;
     	border-radius: 50%;
 		color: gray;
-		padding: 2px;
+		padding: 3px;
 		font-size: 1rem;
-	}
-
-	#dark .writeIcon{
-		color: white;
-		border-color: white;
+		cursor: pointer;
 	}
 	#dark .writeIcon{
+		border: 3px solid white;
+    	border-radius: 50%;
 		color: white;
-		border-color: white;
+		padding: 3px;
+		font-size: 1rem;
+		cursor: pointer;
 	}
 	input{
 		outline: none;

@@ -28,20 +28,20 @@ const Write = () => {
                     <input
                         type="text"
                         placeholder="Title"
-                        className="writeInput w-full p-4"
+                        className="writeInput font-bold w-full p-4"
                         autoFocus={true}
                     />
                         </span>
-                        <div className="writeFormGroup sm:block hidden ">
+                        <div className="writeFormGroup ss:block hidden ">
                     
-                    <button className="writeSubmit bg-blue-600 text-white px-5 py-3">Publish</button>
+                    <button className="writeSubmit bg-blue-600 text-white px-5 pt-[0.6rem] pb-[0.75rem] rounded-[30px]">Publish</button>
                 </div>
              </div>
-                    <TextareaAutosize className='pr-[1rem] pl-[1rem] pb-[1rem]' placeholder="Tell your story..." minRows={3}/>;
+                    <TextareaAutosize className='pr-[1rem] pl-[4rem] pb-[1rem]' placeholder="Tell your story..." minRows={5}/>;
                 </div>
                 <div className="writeFormGroup">
                     
-                    <button className="writeSubmit mt-[18%] block sm:hidden bg-blue-600 text-white px-5 py-3 mb-3">Publish</button>
+                    <button className="writeSubmit mt-[18%] block ss:hidden bg-blue-600 text-white px-5 pt-[0.6rem] pb-[0.75rem] mb-3 rounded-[30px]">Publish</button>
                 </div>
             </div>
             </div>
