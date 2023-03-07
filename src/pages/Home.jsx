@@ -1,5 +1,5 @@
 import { SideBar, BlogCards, } from '../components'
-import BottomBar from '../components/BottomBar.jsx'
+import { BottomBar } from '../components'
 
 const Home = () => {
   return (
