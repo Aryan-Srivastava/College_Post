@@ -8,6 +8,7 @@ import ImageSlider from "./ImageSlider";
 import SplitSection from "./SplitSection";
 import Footer from "./Footer";
 import CardBlocks from "./CardBlocks";
+import BottomBar from "./BottomBar";
 
 export {
   TopBar,
@@ -20,4 +21,5 @@ export {
   SplitSection,
   CardBlocks,
   Footer,
+  BottomBar
 };

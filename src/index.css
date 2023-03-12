@@ -64,8 +64,47 @@
 		color: antiquewhite;
 	}
 	#dark .home{
-		width:max-content;
         background-color: #07062b;
+	}
+	#dark .write{
+        background-color: #07062b;
+		overflow-y: scroll;
+    }
+	.writeImage{
+		border-radius: 7px;
+	}
+	.writeSubmit{
+		border-radius: 10px;
+	}
+	.writeIcon{
+		border: 3px solid gray;
+    	border-radius: 50%;
+		color: gray;
+		padding: 3px;
+		font-size: 1rem;
+		cursor: pointer;
+	}
+	#dark .writeIcon{
+		border: 3px solid white;
+    	border-radius: 50%;
+		color: white;
+		padding: 3px;
+		font-size: 1rem;
+		cursor: pointer;
+	}
+	input{
+		outline: none;
+	}
+	textarea{
+		outline: none;
+	}
+	#dark input{
+		background-color: #07062b;
+		color: white;
+	}
+	#dark textarea{
+		background-color: #07062b;
+		color: white;
 	}
 }
 
