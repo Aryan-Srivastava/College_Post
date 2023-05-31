@@ -1,14 +1,32 @@
-import { SideBar, BlogCards, } from '../components'
-import { BottomBar } from '../components'
+import { useEffect, useState } from "react";
+import { SideBar, BlogCards } from "../components";
+import { BottomBar } from "../components";
+import axios from "axios";
 
 const Home = () => {
-  return (
-    <div className='flex home'>
-        <SideBar />
-        <BlogCards />
-        <BottomBar />
-    </div>
-  )
-}
+	const [blogs, setBlogs] = useState([]);
 
-export default Home
+	useEffect(() => {
+		const fetchBlogs = async () => {
+			const res = await axios.get("/posts");
+			setBlogs(res.data);
+		};
+		fetchBlogs();
+	}, []);
+
+	console.log(blogs);
+
+	return (
+		<div className="flex">
+			<SideBar />
+			<div>
+				{blogs.map((blog) => (
+					<BlogCards {...blog} />
+				))}
+			</div>
+			<BottomBar />
+		</div>
+	);
+};
+
+export default Home;

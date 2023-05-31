@@ -12,7 +12,6 @@ import {
 } from "./pages";
 import { Route, Routes } from "react-router";
 import { createContext, useState } from "react";
-import ReactSwitch from "react-switch";
 
 export const ThemeContext = createContext(null);
 
@@ -26,7 +25,7 @@ function App() {
   return (
     <>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className="app"  id={theme}>
+      <div className="app" id={theme}>
         <TopBar theme={theme} toggleTheme={toggleTheme} />
         <Routes>
           <Route path="/" element={<Home />} />
